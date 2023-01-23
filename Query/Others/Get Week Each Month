@@ -1,0 +1,2 @@
+Declare @getdate date = getdate()
+select datediff(ww,datediff(d,0,dateadd(m,datediff(m,7,ab.tanggal),0))/7*7,dateadd(d,-1,ab.tanggal))+1
